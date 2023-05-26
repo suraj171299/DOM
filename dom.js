@@ -101,16 +101,24 @@ for(var i = 0;i<li.length;i++){
 
 var list = document.getElementsByClassName('list-group-item')
 for(var i =0;i<list.length;i++){
-    list[i].style.backgroundColor = 'red'
+    list[i].style.backgroundColor = '#f4f4f4'
 }
 
 var lists = document.getElementsByTagName('li')
 for(var i =0;i<lists.length;i++){
-    lists[i].style.backgroundColor = 'red'
+    lists[i].style.backgroundColor = '#ccc'
 }
 
 var l = document.querySelector('.list-group-item:nth-child(2)')
-l.style.backgroundColor = 'green'
+// l.style.backgroundColor = 'green'
 
-var m = document.querySelector('.list-group-item:nth-child(3)')
-m.style.visibility = 'hidden'
+// var m = document.querySelector('.list-group-item:nth-child(3)')
+// m.style.visibility = 'hidden'
+
+var a = document.querySelectorAll('.list-group-item')
+a[1].style.color = 'green'
+
+var b = document.querySelectorAll('li:nth-child(odd)')
+for(var i =0;i<b.length;i++){
+    b[i].style.backgroundColor = 'green'
+}
