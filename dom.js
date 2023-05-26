@@ -86,6 +86,13 @@ var odd = document.querySelectorAll('li:nth-child(odd)')
 var even = document.querySelectorAll('li:nth-child(even)')
 
 for(var i =0;i<odd.length;i++){
-    od[i].style.backgroundColor = '#f4f4f4'
+    odd[i].style.backgroundColor = '#f4f4f4'
     even[i].style.backgroundColor = '#ccc'
+}
+var color = document.getElementsByClassName('list-group-item')
+color[2].style.backgroundColor = 'green'
+
+var li = document.getElementsByTagName('li')
+for(var i = 0;i<li.length;i++){
+    li[i].style.fontWeight = 'bolder'
 }
