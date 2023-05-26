@@ -79,20 +79,32 @@
 
 // QUERYSELECTORALL //
 
-var titles = document.querySelectorAll('.title')
-console.log(titles);
+// var titles = document.querySelectorAll('.title')
+// console.log(titles);
 
-var odd = document.querySelectorAll('li:nth-child(odd)')
-var even = document.querySelectorAll('li:nth-child(even)')
+// var odd = document.querySelectorAll('li:nth-child(odd)')
+// var even = document.querySelectorAll('li:nth-child(even)')
 
-for(var i =0;i<odd.length;i++){
-    odd[i].style.backgroundColor = '#f4f4f4'
-    even[i].style.backgroundColor = '#ccc'
-}
+// for(var i =0;i<odd.length;i++){
+//     odd[i].style.backgroundColor = '#f4f4f4'
+//     even[i].style.backgroundColor = '#ccc'
+// }
 var color = document.getElementsByClassName('list-group-item')
 color[2].style.backgroundColor = 'green'
 
 var li = document.getElementsByTagName('li')
 for(var i = 0;i<li.length;i++){
     li[i].style.fontWeight = 'bolder'
+}
+
+
+
+var list = document.getElementsByClassName('list-group-item')
+for(var i =0;i<list.length;i++){
+    list[i].style.backgroundColor = 'red'
+}
+
+var lists = document.getElementsByTagName('li')
+for(var i =0;i<lists.length;i++){
+    lists[i].style.backgroundColor = 'red'
 }
