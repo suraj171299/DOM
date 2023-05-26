@@ -108,3 +108,9 @@ var lists = document.getElementsByTagName('li')
 for(var i =0;i<lists.length;i++){
     lists[i].style.backgroundColor = 'red'
 }
+
+var l = document.querySelector('.list-group-item:nth-child(2)')
+l.style.backgroundColor = 'green'
+
+var m = document.querySelector('.list-group-item:nth-child(3)')
+m.style.visibility = 'hidden'
